@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    *{
+        font-family: 'Inter', sans-serif;
+        
+    }
+    h1{
+        @apply font-black text-[2.5rem]
+    }
+    h2{
+        @apply font-medium text-xl
+    }
+    h3{
+        @apply font-normal text-xl
+
+    }
+    h4{
+        @apply font-light text-[1.125rem]
+    }
+}
+@layer components{
+    .color{
+        @apply flex flex-col items-center gap-1
+    }
+    .color div{
+        @apply h-28 w-28 rounded-md cursor-pointer
+    }
+    .color h3{
+        @apply text-gray-600
+    }
+}
+
+@layer utilities{
+    .text-blue-550{
+        @apply text-[#0066FF]
+    }
+    .border-blue-550{
+        @apply border-[#0066FF]
+    }
+    .bg-blue-550{
+        @apply bg-[#0066FF]
+    }
+}

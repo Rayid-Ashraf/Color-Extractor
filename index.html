@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Extractor</title>
+  <meta name="description"
+  content="Color Extractor allows you to extract all the colors from your image with just a few clicks">
+<meta name="keywords" content="color extractor ai copy palette images web dominant webapp website">
+
+
+<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+<link rel="apple-touch-icon" type="image/x-icon" href="./assets/logo.png" />
+
+  <link rel="stylesheet" href="./dist/output.css" />
+  <script defer type="module" src="./dist/bundle.js"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap");
+  </style>
+</head>
+
+<body>
+  <main class="bg-gray-100 px-2 pt-8 sm:px-10 md:px-14 lg:px-20">
+    <header class="mb-6 w-full  py-6 text-center">
+      <h1 class="let"><span class="text-blue-550">Color</span> Extractor</h1>
+      <h2 class="text-gray-500">
+        Extract all the colors from your image with a few clicks
+      </h2>
+    </header>
+    <section class="mb-6">
+      <section class="mb-5 flex flex-col lg:flex-row items-center justify-between gap-5 lg:h-[30rem]">
+        <section id="drop-area"
+          class="flex h-full w-full items-center justify-center rounded-lg border-2 border-gray-400 bg-white lg:w-[30%]">
+          <div class="flex h-full flex-col items-center justify-evenly gap-6 py-6">
+            <img src="./assets/image-icon.svg" alt="image" />
+            <h3 class="text-gray-400">Drop it here</h3>
+            <label
+              class="border-blue-550 text-blue-550 hover:bg-blue-550 cursor-pointer rounded border-2 p-3 transition-all duration-300 ease-in-out hover:text-white"
+              for="browse-btn">
+              <h2>Browse image</h2>
+            </label>
+            <input class="hidden" type="file" accept="image" id="browse-btn" />
+          </div>
+        </section>
+        <section
+          class="flex h-full w-full items-center justify-center rounded-lg border-2 border-gray-400 bg-white p-4 lg:w-[70%]">
+          <img id="image" class="h-full w-full" src="./assets/demo-image.svg" alt="uploaded image" />
+        </section>
+      </section>
+      <section class="w-full rounded-lg border-2 border-gray-400 bg-white p-5">
+        <div id="colors" class="flex justify-evenly flex-wrap gap-3">
+          
+            <div class="color">
+              <div style="background-color: rgb(236, 174, 150);"></div>
+              <h3>#ecae96</h3>
+            </div>
+            <div class="color">
+              <div style="background-color: rgb(28, 89, 115);"></div>
+              <h3>#1c5973</h3>
+            </div>
+            <div class="color">
+              <div style="background-color: rgb(3, 21, 43);"></div>
+              <h3>#03152b</h3>
+            </div>
+            <div class="color">
+              <div style="background-color: rgb(110, 186, 191);"></div>
+              <h3>#6ebabf</h3>
+            </div>
+            <div class="color">
+              <div style="background-color: rgb(250, 218, 135);"></div>
+              <h3>#fada87</h3>
+            </div>
+            <div class="color">
+              <div style="background-color: rgb(171, 159, 160);"></div>
+              <h3>#ab9fa0</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="text-center lg:flex lg:justify-between">
+      <h4 class="text-neutral-900">Designed and Developed by Rayid</h4>
+      <h4 class="text-neutral-900">
+        © 2023 Color Extractor. All rights reserved.
+      </h4>
+    </footer>
+  </main>
+</body>
+
+</html>
