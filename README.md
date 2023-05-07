@@ -10,6 +10,6 @@ Color Extractor is a webapp for extracting colors from images. Users can easily 
 - Easy-to-Use design.
 
 ## Screenshots
-![Screenshot](./assets/screenshot.png)
+![Screenshot](https://www.linkpicture.com/q/screenshot_4.png)
 
 **Visit**: https://colorextractor.netlify.app/
